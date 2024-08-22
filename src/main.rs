@@ -2,7 +2,7 @@ use bevy::prelude::Timer;
 use bevy::utils::Duration;
 use rand::{thread_rng, Rng};
 use rusty_engine::prelude::*;
-use std::{f32::consts::TAU};
+use std::f32::consts::TAU;
 const SHOT_SPEED: f32 = 200.0;
 const RELOAD_TIME: u64 = 150;
 const THRUST_TIME: u64 = 200;

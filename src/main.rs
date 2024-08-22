@@ -55,7 +55,7 @@ fn main() {
     let mut game = Game::new();
 
     // game setup goes here
-    let width: f32 = 1280.0;    // FIXME read Width x Height from somewhere
+    let width: f32 = 1280.0;    // FIXME hardcoded for now
     let height: f32 = 720.0;
 
     let mut game_state = GameState {

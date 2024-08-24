@@ -220,7 +220,7 @@ fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
             sprite.translation.y += speed * engine.delta_f32 * (sprite.rotation as f64).cos() as f32;
             // bounds check, out on left side -> new random position
             if sprite.translation.x < min_x || sprite.translation.x > max_x || sprite.translation.y < min_y || sprite.translation.y > max_y {
-                let mut x = 0.0;
+                let mut x ;
                 let mut y ;
                 'random: loop {
                     x = thread_rng().gen_range(game_state.min_x..game_state.max_x);

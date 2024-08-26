@@ -324,7 +324,7 @@ fn reset_meteoroid(m: &mut Sprite, game_state: &GameState) {
     // continue to generate a random position until it
     // is enough far away from the Player.
     let mut x ;
-    let mut y = 0.0;
+    let mut y ;
     'random: loop {
         x = thread_rng().gen_range(game_state.min_x..game_state.max_x);
         y = thread_rng().gen_range(game_state.min_y..game_state.max_y);

@@ -84,6 +84,7 @@ impl Speed {
 mod tests {
     use super::*;
 
+    // mod tests
     #[test]
     fn create_new_thrust() {
         let mut speed = Speed::new();

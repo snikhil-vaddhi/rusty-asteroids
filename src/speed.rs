@@ -58,6 +58,7 @@ impl Speed {
     }
     // Add speed to an already existing Thrust vector,
     // or else add a new Thrust vector.
+    // depends 
     pub fn add(&mut self, speed: f32, rotation: f32) {
         let mut is_new = true;
         for thrust in &mut self.speed {
